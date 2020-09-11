@@ -4,6 +4,11 @@ class GenericPokeSearcher::POKE
 
     @@all = []
 
+
+
+    #Initializing all POKEmon with a name, weight, height, abilities, types, held items and game index.
+
+    
     def initialize(name,url)
         @name = name
         @url = url
