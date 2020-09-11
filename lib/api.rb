@@ -5,14 +5,14 @@ class GenericPokeSearcher::API
 
 
     def fetch
-        url = "https://pokeapi.co/api/v2/pokemon?limit=2810"
+        url = "https://pokeapi.co/api/v2/pokemon?limit=700"
         response = HTTParty.get(url)
         response["results"].each do |poke|
         name = poke["name"]
         url = poke["url"]
         GenericPokeSearcher::POKE.new(name,url)
         end
-       # binding.pry
+       binding.pry
     end
 
 
@@ -32,10 +32,6 @@ class GenericPokeSearcher::API
 
         poke.height = response["height"]
 
-       # binding.pry
-
-
     end
-
 
 end

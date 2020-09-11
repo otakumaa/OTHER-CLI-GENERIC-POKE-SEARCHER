@@ -3,4 +3,6 @@ require './lib/environment'
 
 
 
-GenericPokeSearcher::CLI::new.call
+
+
+GenericPokeSearcher::CLI.new.call

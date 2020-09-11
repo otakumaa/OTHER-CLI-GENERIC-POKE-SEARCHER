@@ -1,6 +1,6 @@
 class GenericPokeSearcher::POKE
 
-    attr_accessor :name, url:, :weights, :height, :abilities, :game_indices, :types, :moves
+    attr_accessor :name, :url, :weights, :height, :abilities, :game_indices, :types, :moves
 
     @@all = []
 
@@ -8,7 +8,7 @@ class GenericPokeSearcher::POKE
 
     #Initializing all POKEmon with a name, weight, height, abilities, types, held items and game index.
 
-    
+
     def initialize(name,url)
         @name = name
         @url = url
