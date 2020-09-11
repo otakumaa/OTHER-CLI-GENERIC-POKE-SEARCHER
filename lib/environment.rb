@@ -4,10 +4,11 @@ require_relative 'cli'
 require_relative 'Poke'
 require_relative 'api'
 
-
-require "httparty"
-require "pry"
-require "nokogiri"
+require 'colorize'
+require 'httparty'
+require 'pry'
+require 'nokogiri'
+require 'bundler'
 
 module GenericPokeSearcher
   class Error < StandardError; end

@@ -1,4 +1,5 @@
-class GenericPokeSearcher
+class GenericPokeSearcher::API
+
     attr_reader :details
 
 
@@ -35,3 +36,6 @@ class GenericPokeSearcher
 
 
     end
+
+
+end
