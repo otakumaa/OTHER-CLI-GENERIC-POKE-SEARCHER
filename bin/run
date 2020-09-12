@@ -1,8 +1,6 @@
 #!/usr/bin/env ruby
 require './lib/environment'
 
+cli = CLI.new
+cli.run
 
-
-
-
-GenericPokeSearcher::CLI.new.call
